@@ -3,6 +3,7 @@
  in the book Alfresco One 5.x Developer's guide
 
  Author: Ignacio De Bonis
+ Date:   19 October 2021
 '''
 import cmislib
 import base64
