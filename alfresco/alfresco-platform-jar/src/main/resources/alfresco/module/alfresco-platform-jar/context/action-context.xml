@@ -8,6 +8,11 @@
 		</property>
 	</bean>
 
+    <bean id="move-replaced" class="com.someco.repo.action.executer.MoveReplacedActionExecuter" parent="action-executer">
+		<property name="nodeService" ref="NodeService" />
+        <property name="fileFolderService" ref="FileFolderService" />
+	</bean>
+
 	<bean id="someco.actionResourceBundles" class="org.alfresco.i18n.ResourceBundleBootstrapComponent">
 		<property name="resourceBundles">
 			<list>

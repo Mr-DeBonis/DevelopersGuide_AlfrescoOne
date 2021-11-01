@@ -13,7 +13,11 @@ Although this is my follow up of the examples from the book "[Alfresco One 5.x D
     - Working with content programatically
       - Create content with JavaScript using the *Manage rules* from a custom folder.
       - Create, search and delete content from cmislib3 ( Using cmis 1.1.0 instead of the outdated java cmis package v0.13.4)
-
+3. A basic action needs:
+   - Action Executrer class
+   - Its Spring bean configuration
+   - A properties file
+   
 # Test it out!
 ## Custom models
 1. Create a *Marketing* Site, with a *Document Library*

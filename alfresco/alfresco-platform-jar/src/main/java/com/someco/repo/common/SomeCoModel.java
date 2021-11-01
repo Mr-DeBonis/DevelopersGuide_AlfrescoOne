@@ -13,8 +13,8 @@ public class SomeCoModel {
     public final static QName TYPE_WHITEPAPER = QName.createQName(SOMECO_MODEL_URI, "whitepaper");
     public final static QName TYPE_HRDOC = QName.createQName(SOMECO_MODEL_URI, "hrDoc");
     public final static QName TYPE_SALESDOC = QName.createQName(SOMECO_MODEL_URI, "salesDoc");
-    public final static QName TYPE_HRPOLICY = QName.createQName(SOMECO_MODEL_URI, "hrPolicy");
     public final static QName TYPE_LEGALDOC = QName.createQName(SOMECO_MODEL_URI, "legalDoc");
+    public final static QName TYPE_HRPOLICY = QName.createQName(SOMECO_MODEL_URI, "hrPolicy");
     
     // Aspects QName properties
     public final static QName ASPECT_WEBABLE = QName.createQName(SOMECO_MODEL_URI, "webable");

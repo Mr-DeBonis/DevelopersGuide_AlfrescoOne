@@ -30,6 +30,17 @@
         </forms>
     </config>
 
+    <!-- Make cm:replaceable aspect visible in the UI -->
+    <config evaluator="aspect" condition="cm:replaceable">
+        <forms>
+            <form>
+                <field-visibility>
+                    <show id="cm:replaces" />
+                </field-visibility>
+            </form>
+        </forms>
+    </config>
+
     <!-- Display Custom properties on property sheets -->
     <config evaluator="node-type" condition="sc:doc">
         <forms>
@@ -185,6 +196,7 @@
                 <subtype name="sc:salesDoc" />
                 <subtype name="sc:opsDoc" />
                 <subtype name="sc:legalDoc" />
+                <subtype name="sc:hrPolicy" />
             </type>
 
             <type name="sc:doc">
@@ -194,6 +206,11 @@
                 <subtype name="sc:salesDoc" />
                 <subtype name="sc:opsDoc" />
                 <subtype name="sc:legalDoc" />
+                <subtype name="sc:hrPolicy" />
+            </type>
+
+            <type name="sc:hrDoc">
+                <subtype name="sc:hrPolicy" />
             </type>
 
             <type name="cm:folder">
@@ -227,6 +244,7 @@
                 <aspect name="smf:systemConfigSmartFolder" />
                 <aspect name="sc:webable" />
                 <aspect name="sc:clientRelated" />
+                <aspect name="cm:replaceable" />
             </visible>
             <addable></addable>
             <removeable></removeable>
@@ -359,6 +377,7 @@
                 <form labelId="type.sc_salesDoc" descriptionId="search.form.label.sc_salesDoc">sc:salesDoc</form>
                 <form labelId="type.sc_opsDoc" descriptionId="search.form.label.sc_opsDoc">sc:opsDoc</form>
                 <form labelId="type.sc_legalDoc" descriptionId="search.form.label.sc_legalDoc">sc:legalDoc</form>
+                <form labelId="type.sc_hrPolicy" descriptionId="search.form.label.sc_hrPolicy">sc:hrPolicy</form>
             </forms>
         </advanced-search>
     </config>
